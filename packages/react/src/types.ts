@@ -12,6 +12,7 @@ import type {DismissPayload} from './hooks/useDismiss';
 
 export * from '.';
 export {Props as UseClickProps} from './hooks/useClick';
+export {Props as UseCursorPositionProps} from './hooks/useCursorPosition';
 export {Props as UseDismissProps} from './hooks/useDismiss';
 export {Props as UseFocusProps} from './hooks/useFocus';
 export {Props as UseHoverProps} from './hooks/useHover';
