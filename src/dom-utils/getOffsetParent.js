@@ -58,7 +58,8 @@ function getContainingBlock(element: Element) {
     ) {
       return currentNode;
     } else {
-      currentNode = currentNode.parentNode;
+      const parent = currentNode.parentNode;
+      currentNode = isShadowRoot(parent) ? parent.host : parent;
     }
   }
 
